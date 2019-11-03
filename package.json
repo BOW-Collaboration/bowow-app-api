@@ -4,9 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -r ./bin",
+    "compile": "tsc",
+    "compile:win": "SET NODE_ENV=development&& tsc",
+    "start": "npm run compile && node ./bin/index",
+    "start:win": "npm run compile:win && node ./bin/index",
+    "test": "npm run compile && ava",
+    "test:win": "npm run compile:win && ava",
+    "test-cover": "c8 --check-coverage --lines 100 npm run test",
+    "test-cover:win": "c8 --check-coverage --lines 100 npm run test:win"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "components": "./bin/components",
+    "tests": "./bin/tests"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.5",
+    "ava": "^2.4.0",
+    "c8": "^6.0.1",
+    "typescript": "^3.6.4"
+  }
 }

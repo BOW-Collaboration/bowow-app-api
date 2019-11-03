@@ -1,0 +1,23 @@
+// Copyright (c) 2019 Pujit Mehrotra
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
+// See AVA docs for configuration
+// https://github.com/avajs/ava/blob/master/docs/06-configuration.md
+export default {
+    require: ['esm', 'module-alias/register'],
+    files: [
+        "bin/**/*.test.js",
+        "bin/**/*.t.js",
+        "!docs"
+    ],
+    sources: [
+        "**/*.{ts,tsx}",
+        "!bin"
+    ],
+    cache: true,
+    concurrency: 5,
+    failFast: false,
+    tap: true,
+};

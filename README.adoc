@@ -1,0 +1,7 @@
+= App Api
+
+== Prerequisites
+
+- `node` (developed on `v >= 12.0`)
+
+- `yarn`
