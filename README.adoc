@@ -2,9 +2,11 @@
 
 == Prerequisites
 
-- `node` (developed on `v >= 12.0`)
+* `node` (developed on `v >= 12.0`)
+** MacOS/Linux: https://github.com/nvm-sh/nvm
+** Windows: https://github.com/coreybutler/nvm-windows
 
-- `yarn`
+* `yarn` -> https://yarnpkg.com/lang/en/docs/install
 
 == Module Resolution
 
@@ -18,7 +20,5 @@ All files under `src/` are compiled to `bin/`
 Configuration is done under `src/config`
 
 - API config is in `api.ts`
-
 - Firestore config is in `firestore.ts`
-
 - Logging and Winston config is in `winston.ts`
