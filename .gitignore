@@ -150,3 +150,5 @@ public/
 
 # compiled JS files
 bin/
+./serviceAccount.json
+.swp
