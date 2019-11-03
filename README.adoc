@@ -10,3 +10,15 @@
 
 Any directory under `src/` must be mapped under the `"_moduleAliases"` key in
 `package.json`
+
+All files under `src/` are compiled to `bin/`
+
+== Configuration
+
+Configuration is done under `src/config`
+
+- API config is in `api.ts`
+
+- Firestore config is in `firestore.ts`
+
+- Logging and Winston config is in `winston.ts`

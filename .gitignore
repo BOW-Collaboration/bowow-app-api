@@ -150,5 +150,6 @@ public/
 
 # compiled JS files
 bin/
-./serviceAccount.json
+
+# Mac OS generated
 .swp

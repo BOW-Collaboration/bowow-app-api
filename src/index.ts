@@ -2,7 +2,8 @@
 //
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
-import "module-alias/register";
-import "dotenv/config";
 
-console.log("Hi");
+import "module-alias/register"; //  Register module mappings
+import "dotenv/config"; // Load .env (if it exists) into process.env
+
+import "api/index";

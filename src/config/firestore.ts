@@ -5,12 +5,13 @@
 
 import admin from "firebase-admin";
 import path from "path";
+import logger from "./winston";
 const fs = require("fs");
 
 const creds = process.env.FS_CONFIG;
 
 fs.writeFileSync(path.resolve(__dirname, "./serviceAccount.json"), creds);
-console.log("Firestore Service Account Loaded");
+logger.info("Firestore Service Account Loaded");
 
 const serviceAccount = require("./serviceAccount.json");
 
