@@ -5,3 +5,8 @@
 - `node` (developed on `v >= 12.0`)
 
 - `yarn`
+
+== Module Resolution
+
+Any directory under `src/` must be mapped under the `"_moduleAliases"` key in
+`package.json`
